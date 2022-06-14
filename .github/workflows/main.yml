@@ -9,5 +9,5 @@ jobs:
     - name: SonarQube Scan
       uses: kitabisa/sonarqube-action@v1.1.0
       with:
-        host: $ http://localhost:9000/projects
+        host: $ http://localhost:9000
         login: $ a29ca9d2b160f55764abf834cf14a10c4d774a76
