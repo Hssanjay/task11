@@ -31,5 +31,5 @@ jobs:
       - name: Build and analyze
         env:
           SONAR_TOKEN: $ 52018fdaba48202c44a17f751f8686a494725363
-          SONAR_HOST_URL: $ https://550c-2409-4071-4e90-e3b6-14b-76cd-6bef-e40.in.ngrok.io
+          SONAR_HOST_URL: $ https://7ac0-2409-4071-4e90-e3b6-2d06-386d-35bc-9666.in.ngrok.io
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=sdw
