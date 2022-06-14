@@ -3,8 +3,7 @@ on:
   push:
     branches:
       - master # or the name of your main branch
-  pull_request:
-    types: [opened, synchronize, reopened]
+
 jobs:
   build:
     name: Build
@@ -20,7 +19,7 @@ jobs:
       - name: Cache SonarQube packages
         uses: actions/cache@v1
         with:
-          path: ~/.D:\softwares\sonar-scanner-4.7.0.2747-windows/
+          path: ~/.sonar/cache
           key: ${{ runner.os }}-sonar
           restore-keys: ${{ runner.os }}-sonar
       - name: Cache Maven packages
@@ -31,6 +30,6 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       - name: Build and analyze
         env:
-          SONAR_TOKEN: 5f2d22e6d92d7d9743a1b474972ee4cbb453efbc
-          SONAR_HOST_URL: https://cd27-2409-4071-4e90-e3b6-14b-76cd-6bef-e40.in.ngrok.io
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
+          SONAR_TOKEN: $ 176e05d01573dec8458c19c2ab5ab276c4b76db5
+          SONAR_HOST_URL: $ https://550c-2409-4071-4e90-e3b6-14b-76cd-6bef-e40.in.ngrok.io
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=sdw
