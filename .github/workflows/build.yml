@@ -31,6 +31,6 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       - name: Build and analyze
         env:
-          SONAR_TOKEN: adcff765f643882be853f5f53e769dcc4307c083
-          SONAR_HOST_URL: http://52.55.188.136:9000/
+          SONAR_TOKEN: 5f2d22e6d92d7d9743a1b474972ee4cbb453efbc
+          SONAR_HOST_URL: https://cd27-2409-4071-4e90-e3b6-14b-76cd-6bef-e40.in.ngrok.io
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
