@@ -20,7 +20,7 @@ jobs:
       - name: Cache SonarQube packages
         uses: actions/cache@v1
         with:
-          path: ~/.D:\softwares\sonar-scanner-4.7.0.2747-windows
+          path: ~/.D:\softwares\sonar-scanner-4.7.0.2747-windows/
           key: ${{ runner.os }}-sonar
           restore-keys: ${{ runner.os }}-sonar
       - name: Cache Maven packages
