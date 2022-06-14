@@ -10,4 +10,4 @@ jobs:
       uses: kitabisa/sonarqube-action@v1.1.0
       with:
         host: $ http://52.55.188.136:9000
-        login: $ guruguru
+        login: $ adcff765f643882be853f5f53e769dcc4307c083
